@@ -1,2 +1,3 @@
-# student-management-system
-student-management-system
+# Student Management System
+
+A simple Flask web app to manage students using MySQL.
