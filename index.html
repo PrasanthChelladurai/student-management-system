@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Student Management</title></head>
+<body>
+  <h2>Students List</h2>
+  <form method="post" action="/add">
+    Name: <input type="text" name="name">
+    Age: <input type="text" name="age">
+    <button type="submit">Add Student</button>
+  </form>
+  <ul>
+    {% for student in students %}
+    <li>{{ student[1] }} (Age: {{ student[2] }})</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
